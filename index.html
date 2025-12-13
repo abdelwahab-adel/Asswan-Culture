@@ -1,1481 +1,733 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Aswan Culture</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-    text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+    <!--owl carousel-->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,600i,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
   
-}
+    <div id="arrow" style="display:none; position:fixed; bottom:20px; right:20px; z-index:999;">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="index.html">
+                        <h2 data-translate="logo">!Ambesa</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a class="menu_hover" href="index.html" data-translate="home">Home</a></li>
+                        <li><a class="menu_hover" href="#slides_parent" data-translate="heritage_sites">Heritage Sites</a></li>
+                        <li><a class="menu_hover" href="#explore-fiji" data-translate="travel_with_us">Travel With us</a></li>
+                        <li><a class="menu_hover" href="#gallery" data-translate="gallery">Gallery</a></li>
+                        <li><a class="menu_hover" href="#fiji-holyday" data-translate="our_pride">Our Pride</a></li>
+                        <li><a class="menu_hover" href="#blog" data-translate="food">food</a></li>
+                    </ul>
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa fa-bars"></i>
+                </div> 
+            </div>
+        </div>   
+<div style="margin: 20px; text-align: center; display:block; position: fixed; top: 10px; right: 10px; z-index: 999;">
+    <button id="langFlag" style="border:none; background:none; cursor:pointer; display: flex; align-items: center; justify-content: center; "onclick=toggleLanguage()>
+        <img id="flagImage" src="en.png" alt="English" style="width:24px; height:24px;">
+        <span id="langText" style="margin-left: 8px;">English</span>
+    </button>
+</div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="home_header_info">
+                <h1 class="typewrite" data-period="2000" data-translate="header_typewrite"></h1>
+                <p data-translate="header_paragraph">Aswan is a unique blend of history, culture, and natural beauty. If you wish to visit Aswan, you will find a wealth of fascinating ancient landmarks and traditional Nubian villages. The tranquility and serenity that Aswan offers make it an ideal new destination..</p>
+                <a href="https://ar.wikipedia.org/wiki/%D8%A3%D8%B3%D9%88%D8%A7%D9%86" data-translate="read_more">Read More</a>
+            </div>
+        </div>
+        <div class="video">
+            <video id="video" autoplay loop muted>
+                <source type="video/mp4" src="images/Vmain.mp4" />
+            </video>
+        </div>
+    </header>
+
+    <section id="welcome_Sec">
+        <div class="container">
+            <h2 data-translate="tourist_sites"><span>Tourist and archaeological sites</span></h2>
+            <p data-translate="welcome_paragraph">Aswan, one of the most prominent tourist cities in Egypt, is also considered one of the oldest and most beautiful cities
+                . The city is distinguished by its ancient history and stunning natural scenery, and is located on the banks of the Nile River,
+                 making it an ideal destination for tourism and relaxation.</p>
+        </div>
+    </section>
+
+    <section id="slides_parent">
+        <div class="container">
+            <div class="slides">
+                <a href="v1.html"><div class="slide_1">
+                     <div class="slide_info" data-translate="abu_simbel"> 
+                        <p>معبد أبو سمبل</p>
+                    </div>
+                </div></a>
+                <a href="v2.html"><div class="slide_1 slide_2">
+                    <div class="slide_info" data-translate="philae_temple">
+                        <p>معبد فيلة</p>
+                    </div>
+                </div></a> 
+               <a href="v3.html">  <div class="slide_1 slide_3">
+                    <div class="slide_info" data-translate="aswan_museum">
+                        <p>متحف أسوان (متحف جزيرة إلفنتين)</p>
+                    </div>
+                </div></a>
+               <a href="v4.html">  <div class="slide_1 slide_4">
+                    <div class="slide_info" data-translate="west_suhail_village">
+                        <p>قرية غرب سهيل</p>
+                    </div>
+                </div></a>
+                <a href="v5.html"> <div class="slide_1 slide_5">
+                   <div class="slide_info" data-translate="abu_alhawa_dome">
+                        <p>قبة أبو الهوا</p>
+                    </div>
+                </div> </a>
+               <a href="v6.html">  <div class="slide_1 slide_6">
+                    <div class="slide_info" data-translate="unfinished_obelisk">
+                        <p> المسلةالناقصة </p>
+                    </div>
+                </div></a>
+              <a href="v7.html"> <div class="slide_1 slide_7">
+                    <div class="slide_info" data-translate="fatimid_cemetery">
+                        <p>مقبرة الفاطميين في أسوان</p>
+                    </div>
+                </div></a>
+              <a href="v8.html">   <div class="slide_1 slide_8">
+                   <div class="slide_info" data-translate="nubia_museum">
+                        <p>متحف النوبة</p>
+                    </div>
+                </div></a>
+               <a href="v9.html"> <div class="slide_1 slide_9">
+                    <div class="slide_info" data-translate="edfu_temple">
+                        <p>معبد إدفو</p>
+                    </div>
+                </div></a>
+               <a href="v10.html"><div class="slide_1 slide_10">
+                    <div class="slide_info" data-translate="kitchener_island">
+                        <p>جزيرة النباتات</p>
+                    </div>
+                </div></a>
+               <a href="v11.html"> <div class="slide_1 slide_11">
+                    <div class="slide_info" data-translate="nile_museum">
+                        <p>متحف النيل</p>
+                    </div>
+                </div></a>
+                <a href="v12.html"> <div class="slide_1 slide_12">
+                   <div class="slide_info" data-translate="high_dam">
+                        <p>السد العالي</p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </section>
 
-
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-}
-
-a {
-    font-family: 'raleway';
-    font-weight: 600;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'raleway';
-    font-weight: 600;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-
-.img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-#arrow i {
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-    cursor: pointer;
-    background-color: #ff7722;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50px;
-}
-
-/*header*/
-
-header {
-    background-color: red;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 200px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    color: #fff;
-}
-
-.video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-#video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-nav {
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    padding: 30px 0;
-    transition: all 0.5s ease;
-}
-
-.nav-fixed {
-    background-color: #fff;
-    padding: 10px 0;
-    box-shadow: 2px 2px 10px #bbb;
-}
-
-.nav-fixed h2 {
-    color: #ff7702 !important;
-}
-
-.nav-fixed .nav ul a {
-    color: #138808;
-}
-
-.menu-par {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav ul li {
-    display: inline-block;
-}
-
-.nav ul a {
-    color: #fff;
-    padding: 10px;
-    position: relative;
-}
-
-.nav ul a:before {
-    content: "s";
-    background-color: #ff7702;
-    position: absolute;
-    top: 0;
-    width: 0%;
-    height: 2px;
-    font-size: 0px;
-    left: 10px;
-    transition: all 0.5s ease;
-}
-
-.nav ul a:hover:before {
-    width: 74%;
-}
-
-.home_header_info h1 {
-    font-size: 45px;
-    padding: 20px 0px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.logo-par h2 {
-    color: #fff;
-    font-size: 40px;
-}
-
-.home_header_info p {
-    font-size: 15px;
-    line-height: 30px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.home_header_info a {
-    background-color: #fff;
-    color: #138808;
-    text-decoration: none;
-    padding: 17px 45px;
-    margin-top: 25px;
-    display: inline-block;
-    font-size: 14px;
-    position: relative;
-    overflow: hidden;
-}
-
-.home_header_info a:hover {
-    color: #fff;
-}
-
-.home_header_info a:after {
-    content: "Read More";
-    background-color: #138808;
-    width: 0%;
-    font-size: 15px;
-    height: 100%;
-    line-height: 50px;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.5s ease;
-    right: 0;
-}
-
-.home_header_info a:hover:after {
-    width: 100%;
-}
-
-.toggle-btn {
-    display: none;
-    color: #fff;
-}
-
-/* slides*/
-
-section#slides_parent {
-    padding-bottom: 150px;
-}
-
-.slides {
-    display: flex;
-    justify-content: center;
-}
-
-.slides h4 {
-    color: #444;
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: 50px;
-}
-
-.slide_1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 60px;
-    min-width: 60px;
-    height: 300px;
-    border-radius: 40px;
-    margin: 0 15px;
-    position: relative;
-    transition: all 0.5s ease;
-}
-
-.slide_1:hover {
-    min-width: 250px;
-}
-
-.slide_1:hover .slide_info {
-    transform: rotate(0deg);
-    left: 20px;
-    bottom: 20px;
-    font-size: 22px;
-}
-
-.slide_2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i2.jpg);
-}
-
-.slide_3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i3.jpg);
-}
-
-.slide_4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i4.jpg);
-}
-
-.slide_5 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i5.jpg);
-}
-
-.slide_6 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i6.jpg);
-}
-
-.slide_7 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i7.jpg);
-}
-
-.slide_8 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i8.jpg);
-}
-
-.slide_9 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i9.jpg);
-}
-
-.slide_10 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i10.jpg);
-}
-
-.slide_11 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i11.jpg);
-}
-
-.slide_12{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i12.jpg);
-}
-
-
-.slide_info {
-    position: absolute;
-    bottom: 51px;
-    color: #ffff;
-    transform: rotate(-90deg);
-    right: 0px;
-    font-weight: 700;
-    font-size: 12px;
-}
-
-/*welcome Sec Css*/
-
-section#welcome_Sec {
-    text-align: center;
-    padding: 80px 0px;
-}
-
-section#welcome_Sec h2 {
-    color: #343a40;
-    font-size: 42px;
-    font-weight: 600;
-    padding-bottom: 12px;
-}
-
-section#welcome_Sec p {
-    font-size: 17px;
-    color: #777;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-/*explore sec*/
-
-#explore-fiji {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://media.cntraveller.com/photos/611beec6abe0ca68331f97c5/16:9/w_1920%2Cc_limit/Aswan1_CNT_8nov12_JamesBedford_b.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0px;
-    color: #fff;
-}
-
-.explore-info h3 {
-    font-size: 106px;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    margin-bottom: 50px;
-}
-
-/*.explore-info p {
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.explore-info button {
-    background-color: #00a8b4;
-    border: none;
-    padding: 15px 70px;
-    border-radius: 100px;
-    margin-top: 25px;
-    border: 2px solid #00a8b4;
-    transition: all 0.5s ease;
-}
-
-.explore-info button:hover {
-    background-color: #fff;
-}
-
-.explore-info button:hover a {
-    color: #00a8b4;
-}
-
-.explore-info button a {
-    color: #fff;
-    text-decoration: none;
-}*/
-
-#clockdiv {
-    font-family: sans-serif;
-    color: #fff;
-    display: inline-block;
-    font-weight: 100;
-    text-align: center;
-    font-size: 40px;
-}
-
-
-
-#clockdiv > div {
-    padding: 10px;
-    border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: inline-block;
-    box-shadow: 2px 2px 30px #fff;
-    margin-right: 20px;
-}
-
-#clockdiv div > span {
-    padding: 15px;
-    border-radius: 3px;
-    background-color: transparent;
-    display: inline-block;
-}
-
-.smalltext {
-    padding-top: 5px;
-    font-size: 26px;
-}
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    color: #00a8c5;
-    padding: 12px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-::placeholder {
-    color: #fff;
-}
-
-::-webkit-input-placeholder {
-    color: #fff;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #fff;
-}
-
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #fff;
-}
-
-input[type=text]:focus,
-select:focus,
-textarea:focus {
-    border: 2px solid #00a8c5;
-    outline: none;
-}
-
-input[type=submit] {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    width: 100%;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 12px 20px;
-    transition: all 0.5s ease;
-}
-
-
-input[type=submit]:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.explore-content-par {
-    display: flex;
-    align-items: flex-start;
-}
-
-.explore-info {
-    flex: 1;
-}
-
-.counter-form {
-    flex: 1;
-}
-
-
-/*gallery*/
-
-section#gallery {
-    margin: 100px 0px;
-}
-
-.filter-button {
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
-    text-align: center;
-    color: #42B32F;
-    margin-bottom: 30px;
-
-}
-
-.filter-button:hover {
-    font-size: 18px;
-    border: 1px solid #00a8c5;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #138808;
-
-}
-
-.filter-button {
-    font-size: 18px;
-    border: 1px solid #138808;
-    border-radius: 5px;
-    text-align: center;
-    color: #Fff;
-    margin-bottom: 30px;
-    background-color:#ff7722;
-    padding: 10px 20px;
-    margin: 20px 0px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-.filter-button:focus {
-    background-color: #fff;
-    color: #00a8c5;
-    outline: none;
-}
-
-.filter-gal-par {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.port-image {
-    width: 100%;
-}
-
-.gallery_product {
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.gallery_product img {
-    width: 360px;
-    height: 300px;
-    object-fit: cover;
-    transition: all 0.5s ease;
-}
-
-.gallery_product img:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    opacity: 0.7;
-    transform: scale(1.1, 1.1);
-}
-
-/*holyday-fiji*/
-
-.card {
-  --card-gradient: rgba(0, 0, 0, 0.8);
-  --card-gradient: #5e9ad9, #e271ad;
-  --card-blend-mode: overlay;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
-  padding-bottom: 1rem;
-  background-image: linear-gradient(var(--card-gradient), white max(9.5rem, 27vh));
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.card img {
-  border-radius: 0.5rem 0.5rem 0 0;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: max(10rem, 30vh);
-  aspect-ratio: 4/3;
-  mix-blend-mode: var(--card-blend-mode);
-}
-.card img ~ * {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.card > :last-child {
-  margin-bottom: 0;
-}
-.card:hover, .card:focus-within {
-  --card-gradient: #24a9d5 max(8.5rem, 20vh);
-}
-
-/* Additional demo display styles */
-#fiji-holyday {
-  display: grid;
-  place-content: center;
-  justify-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 1rem;
-  line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  color: #444;
-  background-color: #e1faf1;
-  box-sizing: border-box;
     
-}
-
-.card h3 {
-  margin-top: 1rem;
-  font-size: 1.25rem;
-}
-
-.card a {
-  color: inherit;
-}
-
-.card-wrapper {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-  grid-gap: 1.5rem;
-  max-width: 100vw;
-  width: 120ch;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-/* #fiji-holyday {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/holyday-bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0px;
-}
-
-section#fiji-holyday h3 {
-    color: #343a40;
-    font-size: 42px;
-    font-weight: 600;
-    padding-bottom: 12px;
-    text-align: center;
-    color: #fff;
-    text-transform: capitalize;
-}
-
- */
-/* .owl-img-par {
-    position: relative;
-    overflow: hidden;
-    width: 500px;
-}
-
-.owl-img-info {
-    position: absolute;
-    bottom: 20px;
-    color: #fff;
-    left: 25px;
-}
-
-.owl-img-par img {
-    filter: brightness(0.6);
-    transition: all 0.5s ease;
-}
-
-.owl-img-par img:hover {
-    transform: scale(1.1, 1.1);
-}
- */
-/* section#project {
-    position: relative;
-    margin-top: 50px;
-}
-
-.owl-carousel.owl-theme.owl-loaded.owl-drag {
-    margin-top: 80px;
-}
-
-.owl-img-info h3 {
-    font-size: 23px !important;
-}
- */
-/*blog*/
-
-
-#blog {
-    padding: 100px 0;
-}
-
-#blog h3 {
-    color: #343a40;
-    font-size: 42px;
-    font-weight: 600;
-    padding-bottom: 12px;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-div#blog-par {
-    display: flex;
-    margin-top: 70px;
-}
-
-.blog-content {
-    display: flex;
-    align-items: center;
-}
-
-.blog-info ul li {
-    display: inline-block;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #999;
-    font-size: 13px !important;
-    font-size: 0.75rem;
-    margin-right: 5px;
-}
-
-.blog-img {
-    position: relative;
-}
-
-/*.blog-img:before {
-    position: absolute;
-    right: 0;
-    top: 0px;
-    font-size: 17px;
-    background-color: #00a8c5;
-    color: #fff;
-    z-index: 1;
-    padding: 9px;
-}*/
-
-.blog-img img {
-    height: 140px;
-    width: 300px;
-}
-
-.blog-info {
-    margin-left: 30px;
-}
-
-.blog-info h4 {
-    color: #00a8c5;
-    font-size: 20px;
-    margin: 6px 0px;
-    cursor: pointer;
-}
-
-.blog-content p {
-    color: #777;
-    font-size: 14px;
-    line-height: 25px;
-}
-
-/*footer*/
-
-footer {
-    border-top: 3px solid #00a8c5;
-}
-
-
-.footer-1 h2 {
-    color: #138808;
-    font-size: 30px;
-}
-
-.fot-info h3 {
-    color: #333;
-    font-size: 25px;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-.fot-info ul {
-    list-style: none;
-}
-
-.fot-info ul li a {
-    color: #333;
-    text-decoration: none;
-    padding: 5px 0px;
-    display: inline-block;
-    transition: all 0.6s ease;
-}
-
-.fot-info ul li a:hover {
-    padding-left: 5px;
-}
-
-.copyright {
-    text-align: center;
-    background-color: #ff7708;
-    color: #fff;
-    padding: 14px 0px;
-    margin: 50px 0px 0px 0px;
-}
-
-.footer-par {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0px 0px;
-}
-
-@media screen and (max-width:768px) {
-    .nav {
-        position: fixed;
-        background-color: #000;
-        width: 100%;
-        height: 100vh;
-        width: 100%;
-        top: 0;
-        left: -100%;
-        transition: all 0.5s ease;
-    }
-
-    .nav-active {
-        left: 0;
-    }
-
-    .toggle-btn i.nav-active:before {
-        content: "\f00d";
-    }
-
-    .nav ul li {
-        display: block;
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .nav ul {
-        margin-top: 100px;
-    }
-
-    .toggle-btn {
-        display: block;
-        z-index: 1;
-    }
-
-    .home_header_info h1 {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .home_header_info p {
-        font-size: 14px;
-        line-height: 30px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    section#welcome_Sec h2 {
-        font-size: 21px;
-    }
-
-    section#welcome_Sec p {
-        font-size: 14px;
-        color: #777;
-        font-weight: 400;
-        line-height: 26px;
-    }
-
-    .slides {
-        flex-direction: column;
-    }
-
-    .slide_1 {
-        width: 90%;
-        min-width: 90%;
-        height: 240px;
-        margin: 20px 15px;
-    }
-
-    section#welcome_Sec {
-        text-align: center;
-        padding: 50px 0px 20px;
-    }
-
-    header {
-        padding: 0 40px;
-    }
-
-    section#welcome_Sec h2 {
-        font-size: 18px;
-    }
-
-    section#slides_parent {
-        padding-bottom: 50px;
-    }
-
-    .slide_info {
-        bottom: 21px;
-        transform: rotate(0deg);
-        left: 20px;
-        font-size: 19px;
-    }
-
-    .explore-content-par {
-        flex-direction: column;
-    }
-
-    .explore-info h3 {
-        font-size: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
-    #clockdiv {
-        font-size: 18px;
-    }
-
-    .smalltext {
-        padding-top: 5px;
-        font-size: 12px;
-    }
-
-    #clockdiv > div {
-        margin-right: 14px;
-    }
-
-    .counter-form {
-        flex: 1;
-        margin-top: 40px;
-    }
-
-    #explore-fiji {
-        padding: 50px 0;
-    }
-
-    section#gallery {
-        margin: 30px 0px;
-    }
-
-    .filter-button {
-        font-size: 15px;
-        margin-bottom: 30px;
-        margin: 20px 0px;
-        cursor: pointer;
-        transition: all 0.5s ease;
-    }
-
-    #fiji-holyday {
-        padding: 50px 0px;
-    }
-
-    #blog {
-        padding: 50px 0;
-    }
-
-    section#fiji-holyday h3 {
-        font-size: 28px;
-    }
-
-    .owl-carousel.owl-theme.owl-loaded.owl-drag {
-        margin-top: 20px;
-    }
-
-    #blog h3 {
-        font-size: 30px;
-    }
-
-    div#blog-par {
-        flex-direction: column;
-    }
-
-    div#blog-par {
-        margin-top: 0px !important;
-    }
-
-    .blog-info h4 {
-        font-size: 17px;
-    }
-
-    div#blog-par {
-        display: flex;
-        margin-top: 30px;
-    }
-
-    .blog-content {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .footer-par {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .explore-info {
-        margin: 0 auto;
-    }
-
-}
-
-
-
-.footer {
-  min-height: auto;
-  padding-top: 0;
-  background: #ff7708;
-}
-.footer .box-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.footer .box-container .box {
-  flex: 1 1 25rem;
-  margin: 2.5rem;
-}
-.footer .box-container .box h3 {
-  font-size: 1rem;
-  color: #fff;
-  padding-bottom: 1rem;
-  font-weight: normal;
-}
-.footer .box-container .box p {
-  font-size: 1rem;
-  color: #ccc;
-  padding: 0.7rem 0;
-  text-transform: none;
-}
-.footer .box-container .box p i {
-  padding-right: 1rem;
-  color: #fff;
-}
-.footer .box-container .box a {
-  font-size: 1rem;
-  color: rgb(238, 238, 238);
-  padding: 0.3rem 0;
-  display: block;
-}
-
-.footer .box-container .box .share {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-}
-.footer .box-container .box .share a {
-  height: 2rem;
-  width: 2rem;
-  padding: .5rem;
-  text-align: center;
-  border-radius: 5rem;
-  font-size: 1rem;
-  margin-right: 1rem;
-  transition: 0.2s;
-  background: rgb(230, 230, 230);
-  color: #02094b;
-  border: none;
+<section class="light">
+	<div class="container py-2">
+		<div class="h1 text-center text-dark pb-4 " id="pageHeaderTitle">Welcome To Our Blog</div>
+
+		<article class="postcard light blue" id="lotus">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="images/lotustower.jpg" alt="Image Title" />
+			</a>
+			<div class="postcard__text t-dark" style="padding-right: 40px;">
+				<h1 class="postcard__title blue"><a href="#">Lotus Tower</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2022-12-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Sun, December 25th 2022
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Lotus Tower also referred to as Colombo Lotus Tower, is a 350 m (1,150 ft) tall tower, located in Colombo, Sri Lanka.It has been called a symbolic landmark of Sri Lanka.As of 2019, the tower is the tallest self-supported structure in South Asia; the second tallest structure in South Asia after the guy-wire-supported INS Kattabomman in India; the 11th tallest tower in Asia and the 19th tallest tower in the world.The lotus-shaped tower is used for communication, observation and other leisure facilities.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fa fa-compass" aria-hidden="true"></i>  Direction</li>
+					<!-- <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+					<li class="tag__item play blue">
+						<a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a> -->
+					</li>
+				</ul>
+			</div>
+		</article>
+
+
+		<article class="postcard light red" id="museum">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="images/musium.jpg" alt="Image Title" />	
+			</a>
+			<div class="postcard__text t-dark" style="padding-left: 45px;">
+				<h1 class="postcard__title red"><a href="#">Colombo National Museum</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Sun, May 25th 2022
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">The Colombo Museum as it was called at the beginning was established on 1st January 1877. It founder was Sir William Henry Gregory, the British Governor of Ceylon (Sri Lanka) at the time. <br>
+
+          The Royal Asiatic Society (CB) was instrumental in bringing to the notice of Gregory on his appointment as Governor in 1872 the need for a public museum with much difficulty the approval of the legislative council was obtained within a year. The Architect of the Public Works Department, J.G. Smither was able to prepare the plans for new structure on Italian architectural style. The construction was completed in 1876 and the Museum commenced it functions in the following year. <br>
+          <br>
+          The Authorities of the museum took various steps to display the cultural and natural heritage of the country for this purpose.
+         </div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fa fa-compass" aria-hidden="true"></i>  Direction</li>
+					<!-- <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+					<li class="tag__item play red">
+						<a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+					</li> -->
+				</ul>
+			</div>
+		</article>
+
+
+		<article class="postcard light green" id="gangarama">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="images/gangarama.jpg" alt="Image Title" />
+			</a>
+			<div class="postcard__text t-dark" style="padding-right: 40px;">
+				<h1 class="postcard__title green"><a href="#">Gangaramaya Temple</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Sun, December 25th 2022
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Gangaramaya Temple is one of the most well-known Buddhist temples in Colombo. It's exceptionally beautiful with the Beira Lake on one side and statues & carvings paving the way inside. The main sanctuary has a huge Buddha statue. <br>
+          The temple's architecture demonstrates an eclectic mix of Sri Lankan, Thai, Indian, and Chinese architecture.
+
+          This Buddhist temple includes several imposing buildings and is situated not far from the placid waters of Beira Lake on a plot of land that was originally a small hermitage on a piece of marshy land. It has the main features of a Vihara (temple), the Cetiya (Pagada) the Bodhitree, the Vihara Mandiraya, the Seema malaka (assembly hall for monks) and the Relic Chamber. In addition, a museum, a library, a residential hall, a three storeyed Pirivena, educational halls and an alms hall are also on the premises.
+          
+          Most notable for tourists is the architecture of Seema Malaka, which was built with donations from a Muslim sponsor to the design of Geoffrey Bawa.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fa fa-compass" aria-hidden="true"></i>  Direction</li>
+					<!-- <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+					<li class="tag__item play green">
+						<a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+					</li> -->
+				</ul>
+			</div>
+		</article>
+
+
+		<article class="postcard light yellow" id="square">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="images/independance.webp" alt="Image Title" />
+			</a>
+			<div class="postcard__text t-dark" style="padding-left: 50px;">
+				<h1 class="postcard__title yellow"><a href="#">Independence Square</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Sun, December 25th 2022
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Independence Memorial Hall (also known as Independence Commemoration Hall) is a national monument in Sri Lanka built for commemoration of the independence of Sri Lanka from the British rule with the restoration of full governing responsibility[2] to a Ceylonese-elected legislature on 4 February 1948. It is located in Independence Square (formerly Torrington Square) in the Cinnamon Gardens, Colombo. It also houses the Independence Memorial Museum. <br>
+
+          The monument was built at the location where the formal ceremony marking the start of self-rule, with the opening of the first parliament by Prince Henry, Duke of Gloucester occurred at a special podium on 4 February 1948. <br>
+          
+          Located at the head of the monument is the statue of the first prime minister of the country Rt. Hon. Don Stephen Senanayake "The Father of the Nation". Most of the annual National Independence Day celebrations have been held here.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fa fa-compass" aria-hidden="true"></i>  Direction</li>
+					<!-- <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+					<li class="tag__item play yellow">
+						<a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+					</li> -->
+				</ul>
+			</div>
+		</article>
+
+
+	</div>
+</section>
+
+
+
+
+
+    <section id="explore-fiji">
+       <center><h1 data-translate="geo_location_title">The unique geographical location, Pharaonic landmarks, and natural scenery</h1></center> 
+       <br><br>
+       <center><p><h4 data-translate="geo_location_desc">Aswan Governorate is located in the far south of Egypt, and is both a desert and a Nile-based governorate <br> The Nile River is the defining element of life there, as it flows through the governorate from north to south.</h4></p></center>
+     <br><br><center> ><iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26368.448058964135!2d32.900106199999996!3d24.092334600000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14367b5ab1a30e5f%3A0xfb109fe337cabccb!2z2KPYs9mI2KfZhtiMINmF2K3Yp9mB2LjYqSDYo9iz2YjYp9mG!5e1!3m2!1sar!2seg!4v1762384011912!5m2!1sar!2seg"
+        width="60%"
+        height="480"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe></center>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div align="center"></div>
+                <div class="filter-gal-par">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="images/fiji-surprise/f1.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="images/fiji-surprise/f2.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="images/fiji-surprise/f3.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="images/fiji-surprise/h1.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="images/fiji-surprise/h2.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="images/fiji-surprise/h3.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="images/fiji-surprise/p1.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="images/fiji-surprise/p2.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="images/fiji-surprise/p3.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="images/fiji-surprise/g1.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="images/fiji-surprise/g2.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="images/fiji-surprise/g3.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="blog">
+        <div class="container">
+            <h3 data-translate="food_title">food</h3>
+            <div id="blog-par">
+                <div class="blog-content">
+                    <div class="blog-img"></div>
+                    <div class="blog-info">
+                        <ul>
+                            <li data-translate="blog_author1">CulturalIndia.net</li>
+                        </ul>
+                        <h4><a href="https://www.culturalindia.net/indian-food/" target="_blank" data-translate="blog_link1">Cultural India : Indian Food</a></h4>
+                        <p data-translate="blog_text1">The traditional food of India has been widely appreciated for its fabulous use of herbs and spices. Indian cuisine is known for its large assortment of dishes.</p>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTayfiy5ZdbssjWkZXaC2JMkZ6Axqy_4CTHOg&usqp=CAU" />
+                    </div>
+                    <div class="blog-info">
+                        <ul>
+                            <li data-translate="blog_author2">Soumik's Blog</li>
+                        </ul>
+                        <h4><a href="http://soumikbhattacharya.blogspot.com/2006/06/unity-of-india-in-diversity.html" target="_blank" data-translate="blog_link2">The Unity of India in Diversity : Religions</a></h4>
+                        <p data-translate="blog_text2">Diversity characterizes India. The diverse characters of India are strongly unified and perfectly assimilated to emerge as a one single nation.</p>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img class="img-responsive" src="https://e9h9g3x6.rocketcdn.me/wp-content/uploads/2016/05/shutterstock_124237597-860x571.jpg.webp" />
+                    </div>
+                    <div class="blog-info">
+                        <ul>
+                            <li data-translate="blog_author3">translatemedia</li>
+                            <li>31.05.2016</li>
+                        </ul>
+                        <h4><a href="https://www.translatemedia.com/translation-blog/look-indias-amazing-linguistic-diversity/" target="_blank" data-translate="blog_link3">A Look at India’s Amazing Linguistic Diversity</a></h4>
+                        <p data-translate="blog_text3">India is a big country and it packs in an astonishing array of languages.
+                            
+                            It’s unlikely that any other country in the world matches India for 
+                            linguistic diversity.</p>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img class="img-responsive" src="https://d.newsweek.com/en/full/1669799/diwali-celebrations.jpg?w=1600&h=900&q=88&f=a41dbae89faa01003f9e4686e91ebe4c" />
+                    </div>
+                    <div class="blog-info">
+                        <ul>
+                            <li data-translate="blog_author4">Treebo</li>
+                            <li>01.02.2018</li>
+                        </ul>
+                        <h4><a href="https://www.treebo.com/blog/religious-festivals-of-india/" target="_blank" data-translate="blog_link4">The Spectrum of National festivals of India</a></h4>
+                        <p data-translate="blog_text4">Such diverse cultures, culminating such varied festivals and that too under the name of a single country; such is the greatness of Indian culture. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our daily posts </h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <img src="images/lotustower.jpg" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Lotus Tower</h3>
+                <p>Lotus Tower also referred to as Colombo Lotus Tower, is a 350 m (1,150 ft) tall tower...</p>
+                <a href="blogs.html#lotus" class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/gallefort.webp" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Galle Fort</h3>
+                <p>The Galle Fort, or Dutch Fort as it is also known, is a fortification first built by...</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/dalada.webp" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Temple Of Tooth</h3>
+                <p>The Temple of the Sacred Tooth Relic or Sri Dalada Maligawa, is a Buddhist temple in Kandy, Sri Lanka.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/unawatuna.webp" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Unawatuna Beach</h3>
+                <p>Unawatuna is one of the biggest tourist destinations in Sri Lanka and is the most “famous” beach in the country..</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/peradeniya.webp" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Peradeniya Botanical Garden</h3>
+                <p>Royal Botanic Gardens, Peradeniya are about 5.5 km to the west of the city of Kandy in the Central Province of Sri Lanka. </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/gangarama.jpg" alt="">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-calendar"></i> 25th Dec, 2022 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Gangaramaya Temple</h3>
+                <p>Gangaramaya Temple is one of the most well-known Buddhist temples in Colombo...</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+
+
+
+
+    <section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3 data-translate="footer_title" style="font-size: 190%;" >Travel with us</h3>
+          <p  data-translate="footer_paragraph">Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3 data-translate="quick_links">quick links</h3>
+          <a href="#home" data-translate="link_home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="https://aswan.gov.eg/" data-translate="link_aswan"><i class="fas fa-chevron-circle-right"></i> Electronic Portal Aswan Governorate</a>
+          <a href="https://mota.gov.eg/ar" data-translate="link_tourism"><i class="fas fa-chevron-circle-right"></i> Ministry of Tourism and Antiquities</a>
+          <a href="#education" data-translate="link_education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work" data-translate="link_work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience" data-translate="link_experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="#course" data-translate="link_course"><i class="fas fa-chevron-circle-right"></i> course</a>
+      </div>
+
+
+      <div class="box">
+          <h3 data-translate="contact_info">contact info</h3>
+          <p data-translate="phone"> <i class="fas fa-phone"></i>01100340198</p>
+          <p data-translate="email"> <i class="fas fa-envelope"></i>abdelwahabadel777@gmail.com</p>
+          <p data-translate="location"> <i class="fas fa-map-marked-alt"></i> Aswan, Egypt</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/abdelwahab-adel-57265926b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bp0FJitl2Sk2cG12k2iX76g%3D%3D" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="#" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:abdelwahabadel777@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://www.facebook.com/profile.php?id=100008450681129&mibextid=ZbWKwL" class="fab fa-facebook" aria-label="FaceBook" target="_blank"></a>
+              <a href="http://t.me/Abdelwahab77" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+              <a href="https://wa.me/+0201100340198" class="fab fa-whatsapp" aria-label="Whatsapp" target="_blank"></a>
+          </div>
+      </div>
+  </div>
+
+ 
+</section>
+
+ 
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/extrenaljq.js"></script>
+
+    <script>
+        // ترجمة النصوص
+        
+        const translations = {
+            en: {
+                logo: "!Ambesa",
+                home: "Home",
+                heritage_sites: "Heritage Sites",
+                travel_with_us: "Travel With us",
+                gallery: "Gallery",
+                our_pride: "Our Pride",
+                food: "food",
+                header_paragraph: "Aswan is a unique blend of history, culture, and natural beauty. If you wish to visit Aswan, you will find a wealth of fascinating ancient landmarks and traditional Nubian villages. The tranquility and serenity that Aswan offers make it an ideal new destination.",
+                read_more: "Read More",
+                tourist_sites: "Tourist and archaeological sites",
+                welcome_paragraph: "Aswan, one of the most prominent tourist cities in Egypt, is also considered one of the oldest and most beautiful cities. The city is distinguished by its ancient history and stunning natural scenery, and is located on the banks of the Nile River, making it an ideal destination for tourism and relaxation.",
+                geo_location_title: "The unique geographical location, Pharaonic landmarks, and natural scenery",
+                geo_location_desc: "Aswan Governorate is located in the far south of Egypt, and is both a desert and a Nile-based governorate. The Nile River is the defining element of life there, as it flows through the governorate from north to south.",
+                cities_title: "The Great Indian Cities",
+                delhi_desc: "The Capital of India",
+                mumbai_desc: "The financial Capital Of India",
+                banglore_desc: "Silicon Valley Of India",
+                food_title: "food",
+                blog_author1: "CulturalIndia.net",
+                blog_link1: "Cultural India : Indian Food",
+                blog_text1: "The traditional food of India has been widely appreciated for its fabulous use of herbs and spices. Indian cuisine is known for its large assortment of dishes.",
+                blog_author2: "Soumik's Blog",
+                blog_link2: "The Unity of India in Diversity : Religions",
+                blog_text2: "Diversity characterizes India. The diverse characters of India are strongly unified and perfectly assimilated to emerge as a one single nation.",
+                blog_author3: "translatemedia",
+                blog_link3: "A Look at India’s Amazing Linguistic Diversity",
+                blog_text3: "India is a big country and it packs in an astonishing array of languages. It’s unlikely that any other country in the world matches India for linguistic diversity.",
+                blog_author4: "Treebo",
+                blog_link4: "The Spectrum of National festivals of India",
+                blog_text4: "Such diverse cultures, culminating such varied festivals and that too under the name of a single country; such is the greatness of Indian culture.",
+                footer_heading: "Travel with us",
+                footer_subheading: "Dekho Apna Desh!",
+                footer_link1: "Indian Culture",
+                footer_link2: "Incredible!ndia",
+                footer_link3: "Ministry of Culture",
+                footer_link4: "Swachh Bharat",
+                footer_visit: "Visit For More",
+                footer_link5: "My Goverment",
+                footer_link6: "Digital India",
+                footer_link7: "Ministry of Tourism",
+                footer_contact: "Contact Us",
+                footer_contact1: "abdelwahab adel",
+                footer_contact2: "RONAK GUPTA",
+                footer_contact3: "TALISH SHIEKH",
+                copyright: "Developed by , abdelwahab-adel",
+                abu_simbel: "Abu Simbel Temple",
+                philae_temple: "Philae Temple",
+                aswan_museum: "Aswan Museum (Elephantine Island Museum)",
+                west_suhail_village: "West Suhail village",
+                abu_alhawa_dome: "Abu Alhawa Dome",
+                unfinished_obelisk: "Unfinished Obelisk",
+                fatimid_cemetery: "Fatimid Cemetery in Aswan",
+                nubia_museum: "Nubia Museum",
+                edfu_temple: "Edfu Temple",
+                kitchener_island: "Plant Island",
+                nile_museum: "Nile Museum",
+                high_dam: "High Dam",
+                header_typewrite: [
+                    "Nature, climate And handicrafts",
+                    "Nubian culture!",
+                    "Geographical location and tourist attractions."
+                ],
+                 footer_title: "Travel with us",
+    footer_paragraph: "Thank you for visiting my personal portfolio website. Connect with me over socials. Keep Rising 🚀. Connect with me over live chat!",
+    quick_links: "quick links",
+    location: "Location  Aswan, Egypt",
+link_home: '<i class="fas fa-chevron-circle-right"></i> Home',
+    link_aswan: '<i class="fas fa-chevron-circle-right"></i> Aswan Center Portal',
+    link_tourism: '<i class="fas fa-chevron-circle-right"></i> Ministry of Tourism and Antiquities',
+    link_education: '<i class="fas fa-chevron-circle-right"></i> Education',
+    link_work: '<i class="fas fa-chevron-circle-right"></i> Work',
+    link_experience: '<i class="fas fa-chevron-circle-right"></i> Experience',
+    link_course: '<i class="fas fa-chevron-circle-right"></i> Course',
+    contact_info: '<i class="fas fa-chevron-circle-right"></i> Contact Information',
+    phone: '<i class="fas fa-phone"></i> Phone 01100340198',
+    email: '<i class="fas fa-envelope"></i> abdelwahabadel777@gmail.com',
+    location: '<i class="fas fa-map-marker-alt"></i> Location  Aswan, Egypt'
   
-}
-.footer .box-container .box .share a:hover {
-  background: transparent;
-  transform: scale(0.98);
-  border: 0.1rem solid rgb(180, 178, 178);
-  color: #fff;
-}
-.footer .credit {
-  padding: 1rem 0 0 0;
-  text-align: center;
-  font-size: 1rem;
-  /* font-family: "Nunito", sans-serif; */
-  font-weight: 600;
-  color: #fff;
-  border-top: 0.1rem solid #fff;
-}
-.footer .credit a {
-  color: #ffae00;
-}
-.footer .fa {
-  color: #fff;
-  margin: 0 0.3rem;
-  font-size: 1rem;
-  animation: pound 0.35s infinite alternate;
-}
+            },
+            ar: {
+                logo: "!أمبيسا",
+                home: "الرئيسية",
+                heritage_sites: "المعالم التراثية",
+                travel_with_us: "سافر معنا",
+                gallery: "المعرض",
+                our_pride: "فخرنا",
+                food: "الطعام",
+                header_paragraph: "أسوان مزيج فريد من التاريخ والثقافة والجمال الطبيعي. إذا رغبت في زيارة أسوان، ستجد العديد من المعالم القديمة والقرى النوبية التقليدية. الهدوء والسكينة التي توفرها أسوان تجعله وجهة مثالية.",
+                read_more: "اقرأ المزيد",
+                tourist_sites: "المواقع السياحية والأثرية",
+                welcome_paragraph: "تعتبر أسوان واحدة من أبرز المدن السياحية في مصر، وتُعد من أقدم وأجمل المدن. تتميز بتاريخها العريق ومناظرها الطبيعية الخلابة، وتقع على ضفاف نهر النيل، مما يجعلها وجهة مثالية للسياحة والاستجمام.",
+                geo_location_title: "الموقع الجغرافي الفريد، المعالم الفرعونية، والمناظر الطبيعية",
+                geo_location_desc: "تقع محافظة أسوان في أقصى جنوب مصر، وهي صحراء ومحافظة تعتمد على نهر النيل. نهر النيل هو العنصر المحدد للحياة هناك، حيث يتدفق عبر المحافظة من الشمال إلى الجنوب.",
+                cities_title: "مدن الهند الكبرى",
+                delhi_desc: "عاصمة الهند",
+                mumbai_desc: "العاصمة المالية للهند",
+                banglore_desc: "وادي السيليكون في الهند",
+                food_title: "الطعام",
+                blog_author1: "CulturalIndia.net",
+                blog_link1: "طعام الهند التقليدي",
+                blog_text1: "لقد حظي الطعام التقليدي في الهند بتقدير واسع لاستخدامه المذهل للأعشاب والتوابل. تشتهر المأكولات الهندية بتشكيلتها الواسعة من الأطباق.",
+                blog_author2: "مدونة سووميك",
+                blog_link2: "وحدة الهند في التنوع: الأديان",
+                blog_text2: "التنوع يميز الهند. الشخصيات المتنوعة للهند موحدة بشكل قوي ومتجانسة تمامًا لتظهر كدولة واحدة.",
+                blog_author3: "translatemedia",
+                blog_link3: "نظرة على التنوع اللغوي المذهل في الهند",
+                blog_text3: "الهند بلد كبير ويحتوي على مجموعة مذهلة من اللغات. من غير المحتمل أن يطابق أي بلد آخر في العالم الهند من حيث التنوع اللغوي.",
+                blog_author4: "تريبو",
+                blog_link4: "تشكيلة المهرجانات الوطنية في الهند",
+                blog_text4: "ثقافات متنوعة، مهرجانات متنوعة، وكل ذلك تحت اسم بلد واحد؛ هذه هي عظمة الثقافة الهندية.",
+                footer_heading: "سافر معنا",
+                footer_subheading: "دیکھو اپنا देश!",
+                footer_link1: "الثقافة الهندية",
+                footer_link2: "الهند المدهشة",
+                footer_link3: "وزارة الثقافة",
+                footer_link4: "حملة نظافة الهند",
+                footer_visit: "زورنا للمزيد",
+                footer_link5: "حكومتي",
+                footer_link6: "الهند الرقمية",
+                footer_link7: "وزارة السياحة",
+                footer_contact: "اتصل بنا",
+                footer_contact1: " عبد الوهاب عادل",
+                footer_contact2: "روناك غوبتا",
+                footer_contact3: "تاليش شيخ",
+                copyright: "تم التطوير بواسطة ،عبد الوهاب عادل",
+                philae_temple: "معبد فيلة",
+                aswan_museum: "متحف أسوان (متحف جزيرة إلفنتين) ",
+                west_suhail_village: "قرية غرب سهيل",
+                abu_alhawa_dome: "قبة أبو الهوا",
+                unfinished_obelisk: "المسلة الناقصة ",
+                fatimid_cemetery: "مقبرة الفاطميين في أسوان",
+                nubia_museum: "متحف النوبة",
+                abu_simbel: "معبد ابوسمبل",
+                edfu_temple: "معبد إدفو",
+                kitchener_island: "جزيرة النباتات",
+                nile_museum: "متحف النيل",
+                high_dam: "السد العالي", 
+                header_typewrite: [
+                    "الطبيعة، المناخ والحرف اليدوية",
+                    "الثقافة النوبية!",
+                    "الموقع الجغرافي والمعالم السياحية."
+                ],
+                  footer_title: "سافر معنا",
+    footer_paragraph: "شكرًا لزيارة موقعي الشخصي. تواصل معي عبر وسائل التواصل الاجتماعي. استمر في الصعود 🚀. تواصل معي عبر الدردشة الحية!",
+    quick_links: "روابط سريعة",
+     link_home: '<i class="fas fa-chevron-circle-right"></i> الصفحة الرئيسية',
+    link_aswan: '<i class="fas fa-chevron-circle-right"></i> البوابة الإلكترونية لمركز أسوان',
+    link_tourism: '<i class="fas fa-chevron-circle-right"></i> وزارة السياحة والآثار',
+    link_education: '<i class="fas fa-chevron-circle-right"></i> التعليم',
+    link_work: '<i class="fas fa-chevron-circle-right"></i> العمل',
+    link_experience: '<i class="fas fa-chevron-circle-right"></i> الخبرة',
+    link_course: '<i class="fas fa-chevron-circle-right"></i> الدورة',
+    contact_info: '<i class="fas fa-chevron-circle-right"></i> معلومات الاتصال',
+    phone: '<i class="fas fa-phone"></i> الهاتف 01100340198',
+    email: '<i class="fas fa-envelope"></i> abdelwahabadel777@gmail.com',
+    location: '<i class="fas fa-map-marker-alt"></i> الموقع: أسوان، مصر'
+            }
+        };
 
+        let currentLanguage = 'ar'; // أو 'en' حسب الافتراض
 
+        // وظيفة لتبديل اللغة
+        function toggleLanguage() {
+            if (currentLanguage === 'ar') {
+                currentLanguage = 'en';
+                 document.getElementById('flagImage').src = 'ar.jpg'; // صورة علم العربية
+                document.getElementById('flagImage').alt = 'العربية';
+                document.getElementById('langText').innerText = 'عربي';
+            } else {
+                currentLanguage = 'ar';
+               document.getElementById('flagImage').src = 'en.png'; // صورة علم الإنجليزية
+                document.getElementById('flagImage').alt = 'English';
+                document.getElementById('langText').innerText = 'English';
+            }
+            updateTexts(); // تحديث النصوص بناءً على اللغة الجديدة
+        }
 
+        // وظيفة لتحديث النصوص المترجمة
+        function updateTexts() {
+            document.querySelectorAll('[data-translate]').forEach(function(element) {
+                const key = element.getAttribute('data-translate');
+                if (translations[currentLanguage] && translations[currentLanguage][key]) {
+            element.innerHTML = translations[currentLanguage][key];
+                }
+            });
+        }
 
+        // عند تحميل الصفحة، نحدث النصوص
+        document.addEventListener('DOMContentLoaded', () => {
+            updateTexts();
+        });
 
-.blogs {
-  background-color: #eee;
-margin: 30px;
-}
+        
+    </script>
 
-.blogs .slide {
-  text-align: center;
-  padding: 1rem;
-  font-size: 120%;
+</body>
 
-
-}
-
-.blogs .slide img {
-  height: 10rem;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: .5rem;
-}
-
-.blogs .slide .icons {
-  background: #10221b;
-  border-radius: .5rem;
-  padding: 1rem;
-  position: relative;
-  top: -2rem;
-  display: inline-block;
-}
-
-.blogs .slide .icons a {
- font-size: 80%;
-  color: #fff;
-  margin: 0 1rem;
-}
-
-.blogs .slide .icons a:hover {
-  color: #219150;
-}
-
-.blogs .slide .icons a i {
-  padding-right: .5rem;
-  color: #219150;
-}
-
-.blogs .slide h3 {
- font-size: 75%;
-  color: #10221b;
-}
-
-.blogs .slide p {
- font-size: 60%;
-
-  padding: 1rem 0;
-  line-height: 2;
-  color: #10221b;
-}
-
-
-
-
-
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  border: 0.2rem solid #10221b;
- /* background: #10221b;
-  color: #fff;*/ 
-  border-radius: 20px;
-  color: #10221b;
-  cursor: pointer;
-  background: none;
- font-size: 75%;
-  padding: 1rem 3rem;
-  /* filter: blur(1px); */
-}
-
-.btn:hover {
-  background: #ff7708;
-  color: #fff;
-}
-
-
-
-
-
-
-
-
-
-.light {
-    background: #f3f5f7;
-    font-size: 15px;
-  }
-  
-  a, a:hover {
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  #pageHeaderTitle {
-    margin: 2rem 0;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  
-  /* Cards */
-  .postcard {
-    flex-wrap: wrap;
-    display: flex;
-    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-    border-radius: 10px;
-    margin: 0 0 2rem 0;
-    overflow: hidden;
-    position: relative;
-    color: #ffffff;
-  }
-  /* .postcard.dark {
-    background-color: #18151f;
-  } */
-  .postcard.light {
-    background-color: #e1e5ea;
-  }
-  .postcard .t-dark {
-    color: #18151f;
-  }
-  .postcard a {
-    color: inherit;
-  }
-  .postcard h1, .postcard .h1 {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-  .postcard .small {
-    font-size: 80%;
-  }
-  .postcard .postcard__title {
-    font-size: 1.75rem;
-  }
-  .postcard .postcard__img {
-    max-height: 180px;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-  }
-  .postcard .postcard__img_link {
-    display: contents;
-  }
-  .postcard .postcard__bar {
-    width: 50px;
-    height: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    background-color: #424242;
-    transition: width 0.2s ease;
-  }
-  .postcard .postcard__text {
-    padding: 1.5rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  .postcard .postcard__preview-txt {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: justify;
-    height: 100%;
-  }
-  .postcard .postcard__tagbox {
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 14px;
-    margin: 20px 0 0 0;
-    padding: 0;
-    justify-content: center;
-  }
-  .postcard .postcard__tagbox .tag__item {
-    display: inline-block;
-    background: rgba(83, 83, 83, 0.4);
-    border-radius: 3px;
-    padding: 2.5px 10px;
-    margin: 0 5px 5px 0;
-    cursor: default;
-    user-select: none;
-    transition: background-color 0.3s;
-  }
-  .postcard .postcard__tagbox .tag__item:hover {
-    background: rgba(83, 83, 83, 0.8);
-  }
-  .postcard:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(-70deg, #424242, transparent 50%);
-    opacity: 1;
-    border-radius: 10px;
-  }
-  .postcard:hover .postcard__bar {
-    width: 100px;
-  }
-  
-  @media screen and (min-width: 769px) {
-    .postcard {
-      flex-wrap: inherit;
-    }
-    .postcard .postcard__title {
-      font-size: 2rem;
-    }
-    .postcard .postcard__tagbox {
-      justify-content: start;
-    }
-    .postcard .postcard__img {
-      max-width: 300px;
-      max-height: 100%;
-      transition: transform 0.3s ease;
-    }
-    .postcard .postcard__text {
-      padding: 3rem;
-      width: 100%;
-    }
-    .postcard .media.postcard__text:before {
-      content: "";
-      position: absolute;
-      display: block;
-      background: #18151f;
-      top: -20%;
-      height: 130%;
-      width: 55px;
-    }
-    .postcard:hover .postcard__img {
-      transform: scale(1.1);
-    }
-    .postcard:nth-child(2n+1) {
-      flex-direction: row;
-    }
-    .postcard:nth-child(2n+0) {
-      flex-direction: row-reverse;
-    }
-    .postcard:nth-child(2n+1) .postcard__text::before {
-      left: -12px !important;
-      transform: rotate(4deg);
-    }
-    .postcard:nth-child(2n+0) .postcard__text::before {
-      right: -12px !important;
-      transform: rotate(-4deg);
-    }
-  }
-  @media screen and (min-width: 1024px) {
-    .postcard__text {
-      padding: 2rem 3.5rem;
-    }
-  
-    .postcard__text:before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: -20%;
-      height: 130%;
-      width: 45px;
-    }
-  
-    /* .postcard.dark .postcard__text:before {
-      background: #18151f;
-    } */
-  
-    .postcard.light .postcard__text:before {
-      background: #e1e5ea;
-    }
-  }
-  /* COLORS */
-  .postcard .postcard__tagbox .green.play:hover {
-    background: #79dd09;
-    color: black;
-  }
-  
-  .green .postcard__title:hover {
-    color: #79dd09;
-  }
-  
-  .green .postcard__bar {
-    background-color: #79dd09;
-  }
-  
-  .green::before {
-    background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
-  }
-  
-  .green:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
-  }
-  
-  .postcard .postcard__tagbox .blue.play:hover {
-    background: #0076bd;
-  }
-  
-  .blue .postcard__title:hover {
-    color: #0076bd;
-  }
-  
-  .blue .postcard__bar {
-    background-color: #0076bd;
-  }
-  
-  .blue::before {
-    background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
-  }
-  
-  .blue:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
-  }
-  
-  .postcard .postcard__tagbox .red.play:hover {
-    background: #bd150b;
-  }
-  
-  .red .postcard__title:hover {
-    color: #bd150b;
-  }
-  
-  .red .postcard__bar {
-    background-color: #bd150b;
-  }
-  
-  .red::before {
-    background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
-  }
-  
-  .red:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
-  }
-  
-  .postcard .postcard__tagbox .yellow.play:hover {
-    background: #bdbb49;
-    color: black;
-  }
-  
-  .yellow .postcard__title:hover {
-    color: #bdbb49;
-  }
-  
-  .yellow .postcard__bar {
-    background-color: #bdbb49;
-  }
-  
-  .yellow::before {
-    background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
-  }
-  
-  .yellow:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
-  }
-  
-  @media screen and (min-width: 769px) {
-    .green::before {
-      background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
-    }
-  
-    .green:nth-child(2n)::before {
-      background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
-    }
-  
-    .blue::before {
-      background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
-    }
-  
-    .blue:nth-child(2n)::before {
-      background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
-    }
-  
-    .red::before {
-      background-image: linear-gradient(-80deg, rgba(189, 21, 11, 0.1), transparent 50%);
-    }
-  
-    .red:nth-child(2n)::before {
-      background-image: linear-gradient(80deg, rgba(189, 21, 11, 0.1), transparent 50%);
-    }
-  
-    .yellow::before {
-      background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
-    }
-  
-    .yellow:nth-child(2n)::before {
-      background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
-    }
-  }
-
-
-
-
-
-@media screen and (max-width:950px) {}
-
-
+</html>
