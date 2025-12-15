@@ -1081,94 +1081,6 @@ footer {
 
 
 
-.blogs {
-  background-color: #eee;
-margin: 30px;
-}
-
-.blogs .slide {
-  text-align: center;
-  padding: 1rem;
-  font-size: 120%;
-
-
-}
-
-.blogs .slide img {
-  height: 10rem;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: .5rem;
-}
-
-.blogs .slide .icons {
-  background: #10221b;
-  border-radius: .5rem;
-  padding: 1rem;
-  position: relative;
-  top: -2rem;
-  display: inline-block;
-}
-
-.blogs .slide .icons a {
- font-size: 80%;
-  color: #fff;
-  margin: 0 1rem;
-}
-
-.blogs .slide .icons a:hover {
-  color: #219150;
-}
-
-.blogs .slide .icons a i {
-  padding-right: .5rem;
-  color: #219150;
-}
-
-.blogs .slide h3 {
- font-size: 75%;
-  color: #10221b;
-}
-
-.blogs .slide p {
- font-size: 60%;
-
-  padding: 1rem 0;
-  line-height: 2;
-  color: #10221b;
-}
-
-
-
-
-
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  border: 0.2rem solid #10221b;
- /* background: #10221b;
-  color: #fff;*/ 
-  border-radius: 20px;
-  color: #10221b;
-  cursor: pointer;
-  background: none;
- font-size: 75%;
-  padding: 1rem 3rem;
-  /* filter: blur(1px); */
-}
-
-.btn:hover {
-  background: #ff7708;
-  color: #fff;
-}
-
-
-
-
-
-
-
 
 
 .light {
@@ -1231,14 +1143,7 @@ margin: 30px;
   .postcard .postcard__img_link {
     display: contents;
   }
-  .postcard .postcard__bar {
-    width: 50px;
-    height: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    background-color: #424242;
-    transition: width 0.2s ease;
-  }
+ 
   .postcard .postcard__text {
     padding: 1.5rem;
     position: relative;
@@ -1251,27 +1156,6 @@ margin: 30px;
     text-align: justify;
     height: 100%;
   }
-  .postcard .postcard__tagbox {
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 14px;
-    margin: 20px 0 0 0;
-    padding: 0;
-    justify-content: center;
-  }
-  .postcard .postcard__tagbox .tag__item {
-    display: inline-block;
-    background: rgba(83, 83, 83, 0.4);
-    border-radius: 3px;
-    padding: 2.5px 10px;
-    margin: 0 5px 5px 0;
-    cursor: default;
-    user-select: none;
-    transition: background-color 0.3s;
-  }
-  .postcard .postcard__tagbox .tag__item:hover {
-    background: rgba(83, 83, 83, 0.8);
-  }
   .postcard:before {
     content: "";
     position: absolute;
@@ -1283,9 +1167,7 @@ margin: 30px;
     opacity: 1;
     border-radius: 10px;
   }
-  .postcard:hover .postcard__bar {
-    width: 100px;
-  }
+ 
   
   @media screen and (min-width: 769px) {
     .postcard {
@@ -1294,9 +1176,7 @@ margin: 30px;
     .postcard .postcard__title {
       font-size: 2rem;
     }
-    .postcard .postcard__tagbox {
-      justify-content: start;
-    }
+    
     .postcard .postcard__img {
       max-width: 300px;
       max-height: 100%;
@@ -1356,18 +1236,13 @@ margin: 30px;
     }
   }
   /* COLORS */
-  .postcard .postcard__tagbox .green.play:hover {
-    background: #79dd09;
-    color: black;
-  }
+  
   
   .green .postcard__title:hover {
     color: #79dd09;
   }
   
-  .green .postcard__bar {
-    background-color: #79dd09;
-  }
+  
   
   .green::before {
     background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
@@ -1377,16 +1252,10 @@ margin: 30px;
     background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
   }
   
-  .postcard .postcard__tagbox .blue.play:hover {
-    background: #0076bd;
-  }
+  
   
   .blue .postcard__title:hover {
     color: #0076bd;
-  }
-  
-  .blue .postcard__bar {
-    background-color: #0076bd;
   }
   
   .blue::before {
@@ -1397,17 +1266,13 @@ margin: 30px;
     background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
   }
   
-  .postcard .postcard__tagbox .red.play:hover {
-    background: #bd150b;
-  }
+  
   
   .red .postcard__title:hover {
     color: #bd150b;
   }
   
-  .red .postcard__bar {
-    background-color: #bd150b;
-  }
+  
   
   .red::before {
     background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
@@ -1417,7 +1282,7 @@ margin: 30px;
     background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
   }
   
-  .postcard .postcard__tagbox .yellow.play:hover {
+  .postcard .x .yellow.play:hover {
     background: #bdbb49;
     color: black;
   }
@@ -1426,9 +1291,7 @@ margin: 30px;
     color: #bdbb49;
   }
   
-  .yellow .postcard__bar {
-    background-color: #bdbb49;
-  }
+
   
   .yellow::before {
     background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
@@ -1475,7 +1338,82 @@ margin: 30px;
 
 
 
-
 @media screen and (max-width:950px) {}
 
 
+
+
+
+/* .cardss-container {
+  margin: 0 auto;
+  text-align: center;
+} */
+
+.cardss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; 
+  
+  
+}
+
+.cardd {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+}
+
+.cardd img {
+  width: 100%;
+  height: 320px;
+  border-radius: 4px;
+   object-fit: cover; /* لضبط الصورة بشكل مناسب داخل الحاوية */
+  transition: transform 0.3s ease
+}
+
+
+.cardd p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.see-more {
+  margin-top: 20px;
+}
+
+.see-more a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.see-more a:hover {
+  background-color: #0056b3;
+}
+
+/* التنسيق الأساسي للعرض الكبير */
+.cardss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* عند تصغير الشاشة، تتغير إلى عمودي */
+@media (max-width: 600px) {
+  .cardss{
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardd {
+    width: 80%; /* أو أي عرض تريد */
+  }
+}
