@@ -25,14 +25,139 @@
   margin-top: 60px;
 }
 </style>
+<style>
+header {
+    
+    background-color:#ff7708;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px; /* تقليل padding الجانبي ليكون مناسبًا للشاشات الصغيرة */
+    position: relative;
+    background-blend-mode: overlay;
+    color: #fff;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* مسافة بين العنصرين */
+    padding: 20px;
+    width: 100%; /* لضمان ملء الحاوية بشكل كامل */
+    max-width: 1200px; /* لمنع التمدد المفرط على الشاشات الكبيرة */
+    
+}
+
+.home_header_info {
+    flex: 1;
+}
+
+.video1 {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* لضبط الفيديو في المنتصف */
+}
+
+#video {
+    max-width: 140%; /* يجعل الفيديو يتكيف مع حجم العنصر الحاوي */
+    height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
+    max-height: 400px; /* يحد من ارتفاع الفيديو */
+    border-radius: 8px; /* تدوير الزوايا */
+}
+#pic{
+    font-size: 220%; 
+}
+
+/* وسائط الإعلام لتصغير الشاشة */
+@media screen and (max-width:768px) {
+    .nav {
+        position: fixed;
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-active {
+        left: 0;
+    }
+
+    .toggle-btn i.nav-active:before {
+        content: "\f00d";
+    }
+
+    .nav ul li {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .nav ul {
+        margin-top: 100px;
+    }
+
+    .toggle-btn {
+        display: block;
+        z-index: 1;
+    }
+
+    .home_header_info h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .home_header_info p {
+        font-size: 14px;
+        line-height: 30px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section#welcome_Sec h2 {
+        font-size: 21px;
+    }
+
+    section#welcome_Sec p {
+        font-size: 14px;
+        color: #777;
+        font-weight: 400;
+        line-height: 26px;
+    }
+#pic{
+     font-size: 120%;
+}
+ 
+#loc{
+     font-size:120%;
+}
+#loc1{
+     font-size: 70%;
+}
+ 
+   
+}
+
+</style>
 </head>
 
 <body>
+
+      <div id="arrow">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
 
   
     <div id="arrow" style="display:none; position:fixed; bottom:20px; right:20px; z-index:999;">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </div>
+
 
     <nav >
         <div class="container">
@@ -45,11 +170,11 @@
                 <div class="nav">
                     <ul>
                         <li><a class="menu_hover" href="index.html" data-translate="home">Home</a></li>
-                        <li><a class="menu_hover" href="#slides_parent" data-translate="heritage_sites">Heritage Sites</a></li>
-                        <li><a class="menu_hover" href="#explore-fiji" data-translate="travel_with_us">Travel With us</a></li>
-                        <li><a class="menu_hover" href="#gallery" data-translate="gallery">Gallery</a></li>
+                        <li><a class="menu_hover" href="index.html#slides_parent" data-translate="heritage_sites">Heritage Sites</a></li>
+                        <!-- <li><a class="menu_hover" href="index.html#explore-fiji" data-translate="travel_with_us">Travel With us</a></li> -->
+                        <!-- <li><a class="menu_hover" href="index.html#gallery" data-translate="gallery">Gallery</a></li> -->
                         <li><a class="menu_hover" href="#fiji-holyday" data-translate="our_pride">Our Pride</a></li>
-                        <li><a class="menu_hover" href="#food" data-translate="food">food</a></li>
+                        <li><a class="menu_hover" href="index.html#food" data-translate="food">food</a></li>
                     </ul>
                 </div>
                 <div class="toggle-btn">
@@ -65,92 +190,113 @@
 </div>
     </nav>
 
-<div style="height: 75px;"></div>
+<!-- <div style="height: 70px;"></div> -->
 
-    <section id="welcome_Sec">
-        <div class="container">
-            <h2><span>The most famous foods in Aswan</span></h2>
-            <p>Aswan is famous for its many authentic, popular, 
-                and distinctive Nubian and Upper Egyptian dishes, which rely on simplicity and local ingredients.</p>
-        </div>
-    </section>
+   <header>
     
-<div class="cardss-container" style="
-  margin: 0 auto;
-  text-align: center;">
-  <!-- الصور والكلام -->
-  <div class="cardss">
-    <div class="cardd">
-        <img src="images/food/WhatsApp Image 2025-12-15 at 03.16.28_d1c95a32.jpg" >
 
-      <h1 style="color: #ffae00;">alsalat</h1>
-      <p> One of the most famous Nubian dishes is to put the meat in a pot on the fire with pepper and onion and stir until it softens, then add ghee and stir until it browns, then add water and leave it on the fire until it is cooked.</p>
-    </div>
-   
-    <div class="cardd">
-      <img src="images/food/WhatsApp Image 2025-12-15 at 02.58.21_c83a1e20.jpg" >  
-      <h1 style="color: #ffae00;">Jakoud</h1>
-      <p> The dish known as "Jakoud" is an integral part of Nubian heritage, served at celebrations, weddings, and during Ramadan. Also known as "Itr," it's a popular traditional Nubian dish similar to molokhia, but prepared in a unique way that differs from the usual method, giving it a distinctive taste and authentic, heritage-inspired flavor that reflects Nubian cuisine.</p>
-    </div>
-   
-    <div class="cardd">
-      <img src="images/food/WhatsApp Image 2025-12-15 at 03.08.31_0a12db19.jpg" >
-      <h1 style="color: #ffae00;">Abreh</h1>
-      <p> Abreh is a distinctive Nubian drink, renowned for its thirst-quenching properties, and is prepared especially during Ramadan. Made from natural ingredients and served chilled, it is a popular staple on the Nubian iftar table, particularly during hot weather.</p>
-    </div>
+<div class="main-container">
 
-    <div class="cardd">
-      <img src="images/food/WhatsApp Image 2025-12-15 at 02.58.22_549f453d.jpg" >
-      <h1 style="color: #ffae00;">Asida Aswan </h1>
-      <p> Asida is one of the most famous traditional dishes of Aswan, made from flour, milk, water, and salt. It is considered a staple on the breakfast table in Aswan, served hot, and is known for its nutritional value and ease of preparation.</p>
-    </div>
-
-    <div class="cardd">      
-      <img src="images/food/WhatsApp Image 2025-12-15 at 02.58.22_6e9148be.jpg" >
-      <h1 style="color: #ffae00;">Khamarit</h1>
-      <p> Khamarit is a popular traditional dish in Aswan and Upper Egypt. It is made from flour, yeast, and sugar, and is either baked or pan-fried until golden brown. Khamarit is characterized by its sweet taste and is often served for breakfast or as a light dessert, especially on special occasions.</p>
-    </div>
-
-     <div class="cardd">
-              <img src="images/food/WhatsApp Image 2025-12-15 at 02.58.22_9bf28f23.jpg" >
-
-      <h1 style="color: #ffae00;">Karmdid</h1>
-      <p> Karmdid is a popular dish in Aswan, especially during the winter months, due to its high nutritional value and warming properties. It is prepared using ground fenugreek, oil, salt, flour, and water, and cooked until it reaches a thick consistency and a distinctive flavor.</p>
-    </div>
-
-    <div class="cardd">
-      <img src="images/food/17048-alkaced-1.jpg" >
-      <h1 style="color: #ffae00;">Aswan liver(kabdat)</h1>
-      <p> It is served at celebrations and weddings. This dish has a special place in most Aswan homes, where the hot ingredients are prepared on-site, giving it a unique and distinctive flavor.</p>
-    </div>
-
-    <div class="cardd">
-      <img src="images/food/WhatsApp Image 2025-12-15 at 03.19.04_7557dc7c.jpg" >
-      <h1 style="color: #ffae00;">Maltout</h1>
-      <p>Maltout (Sun Bread): Maltout, or sun bread, is one of the oldest and most famous types of bread in Upper Egypt. It is made from wheat flour and
-         left to ferment in the sun before being baked in a traditional oven or tabouna. Maltout is a staple on the Upper Egyptian table and is closely linked to heritage and ancient customs.</p>
-    </div>
-   
+  
 </div>
- <div style="margin-bottom: 2%;" class="see-more">
-    <a style="background-color: #ffae00;" href="index.html">return home</a>
+    </header>
+
+
+
+<section id="welcome_Sec" style="margin-bottom: -5px;">
+  <div class="container">
+    <h2><span data-translate="titlef" style="font-size: 45px; color: #bdbb49;" >The most famous foods in Aswan</span></h2>
+    <p data-translate="descf" style="font-size: 20px;">Aswan is famous for its many authentic, popular, and distinctive Nubian and Upper Egyptian dishes, which rely on simplicity and local ingredients.</p>
+  </div> 
+  
+  </section>
+
+
+ <div class="cardss-container" style="margin: 0 auto;  text-align: center;">
+    <!-- الصور والكلام -->
+    <div class="cardss">
+      <div class="cardd">
+        <img src="images/food/WhatsApp Image 2025-12-15 at 03.16.28_d1c95a32.jpg" />
+        <h1 style="color: #ffae00;" data-translate="alsalat_title">السلطة</h1>
+        <p data-translate="alsalat_desc">
+          واحدة من أشهر الأطباق النوبية هو وضع اللحم في قدر على النار مع الفلفل والبصل والتقليب حتى يلين، ثم يضاف السمن ويقلب حتى يُحمر، ثم يُضاف الماء ويترك على النار حتى ينضج.
+        </p>
+      </div>
+     
+      <div class="cardd">
+        <img src="images/food/WhatsApp Image 2025-12-15 at 02.58.21_c83a1e20.jpg" />  
+        <h1 style="color: #ffae00;" data-translate="jakoud_title">الجاكود</h1>
+        <p data-translate="jakoud_desc">
+          الطبق المعروف باسم "الجاكود" هو جزء أساسي من التراث النوبي، يُقدم في الاحتفالات والأعراس وخلال رمضان. يُعرف أيضًا باسم "إتر"، وهو طبق نوبي تقليدي شهير مشابه للمولوخية، لكنه يُحضر بطريقة فريدة تختلف عن الطريقة المعتادة، مما يمنحه طعمًا مميزًا ونكهة أصيلة مستوحاة من التراث النوبي.
+        </p>
+      </div>
+     
+      <div class="cardd">
+        <img src="images/food/WhatsApp Image 2025-12-15 at 03.08.31_0a12db19.jpg" />
+        <h1 style="color: #ffae00;" data-translate="abreh_title">العبري</h1>
+        <p data-translate="abreh_desc">
+          العبري هو مشروب نوبي مميز، معروف بخصائصه المروية، ويُعد خصيصًا خلال رمضان. مصنوع من مكونات طبيعية ويُقدم مبردًا، وهو من أساسيات مائدة الإفطار النوبية، خاصة في الطقس الحار.
+        </p>
+      </div>
+
+      <!-- أطعمة أخرى -->
+      <div class="cardd">
+        <img src="images/food/WhatsApp Image 2025-12-15 at 02.58.22_549f453d.jpg" />
+        <h1 style="color: #ffae00;" data-translate="asida_title">عصيدة أسوان</h1>
+        <p data-translate="asida_desc">
+          عصيدة أسوان من الأطباق التقليدية الشهيرة، مصنوعة من الدقيق والحليب والماء والملح. تعتبر من أساسيات الإفطار في أسوان، وتُقدم ساخنة وتشتهر بقيمتها الغذائية وسهولة تحضيرها.
+        </p>
+      </div>
+
+      <div class="cardd">
+        <img src="images/food/WhatsApp Image 2025-12-15 at 02.58.22_6e9148be.jpg" />
+        <h1 style="color: #ffae00;" data-translate="khamarit_title">الخمرات</h1>
+        <p data-translate="khamarit_desc">
+          الخمرات من الأطباق الشعبية في أسوان وصعيد مصر، تُصنع من الدقيق والخميرة والسكر، وتُخبز أو تُقلى حتى تحمر. تتميز بطعمها الحلو وغالبًا تُقدم في الإفطار أو كحلوى خفيفة، خاصة في المناسبات.
+        </p>
+      </div>
+
+      <div class="cardd">
+        <img src="images/food/WhatsApp Image 2025-12-15 at 02.58.22_9bf28f23.jpg" />
+        <h1 style="color: #ffae00;" data-translate="karmdid_title">الكرميد</h1>
+        <p data-translate="karmdid_desc">
+          الكرميد من الأطباق المشهورة في أسوان، خاصة في الشتاء، نظرًا لقيمته الغذائية العالية وخصائصه الدافئة. يُحضر من الحلبة المطحونة والزيت والملح والدقيق والماء، ويُطبخ حتى يصبح ذو قوام سميك ونكهة مميزة.
+        </p>
+      </div>
+
+      <div class="cardd">
+        <img src="images/food/17048-alkaced-1.jpg" />
+        <h1 style="color: #ffae00;" data-translate="liver_title">كبد أسوان (كبدة)</h1>
+        <p data-translate="liver_desc">
+          يُقدم في الاحتفالات والأعراس. له مكانة خاصة في معظم بيوت أسوان، حيث يتم إعداد المكونات الساخنة في الموقع، مما يمنحه نكهة فريدة ومميزة.
+        </p>
+      </div>
+
+      <div class="cardd">
+        <img src="images/food/WhatsApp Image 2025-12-15 at 03.19.04_7557dc7c.jpg" />
+        <h1 style="color: #ffae00;" data-translate="maltout_title">الملوت</h1>
+        <p data-translate="maltout_desc">
+          الملوت (خبز الشمس): هو واحد من أقدم وأشهر أنواع الخبز في صعيد مصر. يُصنع من دقيق القمح ويُترك ليخمر تحت الشمس قبل أن يُخبز في فرن تقليدي أو طابون. الملوت من أساسيات المائدة الصعيدية وله ارتباط عميق بالتراث والعادات القديمة.
+        </p>
+      </div>
+    </div>
+    <div style="margin-bottom: 2%;" class="see-more">
+      <a style="background-color: #ffae00;" href="index.html" data-translate="return_home">العودة إلى الصفحة الرئيسية</a>
+    </div>
   </div>
-</div>
 
+   <section class="footer" style="margin-bottom: -200px; text-align: left;">
 
-
-    <section class="footer">
-
-  <div class="box-container">
+  <div style="color: #fff;" class="box-container">
 
       <div class="box">
           <h3 data-translate="footer_title" style="font-size: 190%;" >Travel with us</h3>
-          <p  data-translate="footer_paragraph">Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+          <p style="color: #fff;"   data-translate="welcome_paragraph">Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
       </div>
 
       <div class="box">
           <h3 data-translate="quick_links">quick links</h3>
-          <a href="#home" data-translate="link_home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="index.html" data-translate="link_home"><i class="fas fa-chevron-circle-right"></i> home</a>
           <a href="https://aswan.gov.eg/" data-translate="link_aswan"><i class="fas fa-chevron-circle-right"></i> Electronic Portal Aswan Governorate</a>
           <a href="https://mota.gov.eg/ar" data-translate="link_tourism"><i class="fas fa-chevron-circle-right"></i> Ministry of Tourism and Antiquities</a>
           <a href="#education" data-translate="link_education"><i class="fas fa-chevron-circle-right"></i> education</a>
@@ -160,11 +306,11 @@
       </div>
 
 
-      <div class="box">
+      <div  class="box">
           <h3 data-translate="contact_info">contact info</h3>
-          <p data-translate="phone"> <i class="fas fa-phone"></i>01100340198</p>
-          <p data-translate="email"> <i class="fas fa-envelope"></i>abdelwahabadel777@gmail.com</p>
-          <p data-translate="location"> <i class="fas fa-map-marked-alt"></i> Aswan, Egypt</p>
+          <p style="color: #fff;"  data-translate="phone"> <i class="fas fa-phone"></i>01100340198</p>
+          <p data-translate="email" style="color: #fff;" > <i class="fas fa-envelope"></i>abdelwahabadel777@gmail.com</p>
+          <p data-translate="location" style="color: #fff;" > <i class="fas fa-map-marked-alt"></i> Aswan, Egypt</p>
           <div class="share">
 
               <a href="https://www.linkedin.com/in/abdelwahab-adel-57265926b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bp0FJitl2Sk2cG12k2iX76g%3D%3D" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
@@ -181,210 +327,14 @@
 </section>
 
  
-    <script>
-        // ترجمة النصوص
-        
-        const translations = {
-            en: {
-                logo: "!Ambesa",
-                home: "Home",
-                heritage_sites: "Heritage Sites",
-                travel_with_us: "Travel With us",
-                gallery: "Gallery",
-                our_pride: "Our Pride",
-                food: "food",
-                header_paragraph: "Aswan is a unique blend of history, culture, and natural beauty. If you wish to visit Aswan, you will find a wealth of fascinating ancient landmarks and traditional Nubian villages. The tranquility and serenity that Aswan offers make it an ideal new destination.",
-                read_more: "Read More",
-                tourist_sites: "Tourist and archaeological sites",
-                welcome_paragraph: "Aswan, one of the most prominent tourist cities in Egypt, is also considered one of the oldest and most beautiful cities. The city is distinguished by its ancient history and stunning natural scenery, and is located on the banks of the Nile River, making it an ideal destination for tourism and relaxation.",
-                geo_location_title: "The unique geographical location, Pharaonic landmarks, and natural scenery",
-                geo_location_desc: "Aswan Governorate is located in the far south of Egypt, and is both a desert and a Nile-based governorate. The Nile River is the defining element of life there, as it flows through the governorate from north to south.",
-                cities_title: "The Great Indian Cities",
-                delhi_desc: "The Capital of India",
-                mumbai_desc: "The financial Capital Of India",
-                banglore_desc: "Silicon Valley Of India",
-                food_title: "food",
-                blog_author1: "CulturalIndia.net",
-                blog_link1: "Cultural India : Indian Food",
-                blog_text1: "The traditional food of India has been widely appreciated for its fabulous use of herbs and spices. Indian cuisine is known for its large assortment of dishes.",
-                blog_author2: "Soumik's Blog",
-                blog_link2: "The Unity of India in Diversity : Religions",
-                blog_text2: "Diversity characterizes India. The diverse characters of India are strongly unified and perfectly assimilated to emerge as a one single nation.",
-                blog_author3: "translatemedia",
-                blog_link3: "A Look at India’s Amazing Linguistic Diversity",
-                blog_text3: "India is a big country and it packs in an astonishing array of languages. It’s unlikely that any other country in the world matches India for linguistic diversity.",
-                blog_author4: "Treebo",
-                blog_link4: "The Spectrum of National festivals of India",
-                blog_text4: "Such diverse cultures, culminating such varied festivals and that too under the name of a single country; such is the greatness of Indian culture.",
-                footer_heading: "Travel with us",
-                footer_subheading: "Dekho Apna Desh!",
-                footer_link1: "Indian Culture",
-                footer_link2: "Incredible!ndia",
-                footer_link3: "Ministry of Culture",
-                footer_link4: "Swachh Bharat",
-                footer_visit: "Visit For More",
-                footer_link5: "My Goverment",
-                footer_link6: "Digital India",
-                footer_link7: "Ministry of Tourism",
-                footer_contact: "Contact Us",
-                footer_contact1: "abdelwahab adel",
-                footer_contact2: "RONAK GUPTA",
-                footer_contact3: "TALISH SHIEKH",
-                copyright: "Developed by , abdelwahab-adel",
-                abu_simbel: "Abu Simbel Temple",
-                philae_temple: "Philae Temple",
-                aswan_museum: "Aswan Museum (Elephantine Island Museum)",
-                west_suhail_village: "West Suhail village",
-                abu_alhawa_dome: "Abu Alhawa Dome",
-                unfinished_obelisk: "Unfinished Obelisk",
-                fatimid_cemetery: "Fatimid Cemetery in Aswan",
-                nubia_museum: "Nubia Museum",
-                edfu_temple: "Edfu Temple",
-                kitchener_island: "Plant Island",
-                nile_museum: "Nile Museum",
-                high_dam: "High Dam",
-                header_typewrite: [
-                    "Nature, climate And handicrafts",
-                    "Nubian culture!",
-                    "Geographical location and tourist attractions."
-                ],
-                 footer_title: "Travel with us",
-    footer_paragraph: "Thank you for visiting my personal portfolio website. Connect with me over socials. Keep Rising 🚀. Connect with me over live chat!",
-    quick_links: "quick links",
-    location: "Location  Aswan, Egypt",
-link_home: '<i class="fas fa-chevron-circle-right"></i> Home',
-    link_aswan: '<i class="fas fa-chevron-circle-right"></i> Aswan Center Portal',
-    link_tourism: '<i class="fas fa-chevron-circle-right"></i> Ministry of Tourism and Antiquities',
-    link_education: '<i class="fas fa-chevron-circle-right"></i> Education',
-    link_work: '<i class="fas fa-chevron-circle-right"></i> Work',
-    link_experience: '<i class="fas fa-chevron-circle-right"></i> Experience',
-    link_course: '<i class="fas fa-chevron-circle-right"></i> Course',
-    contact_info: '<i class="fas fa-chevron-circle-right"></i> Contact Information',
-    phone: '<i class="fas fa-phone"></i> Phone 01100340198',
-    email: '<i class="fas fa-envelope"></i> abdelwahabadel777@gmail.com',
-    location: '<i class="fas fa-map-marker-alt"></i> Location  Aswan, Egypt'
-  
-            },
-            ar: {
-                logo: "!أمبيسا",
-                home: "الرئيسية",
-                heritage_sites: "المعالم التراثية",
-                travel_with_us: "سافر معنا",
-                gallery: "المعرض",
-                our_pride: "فخرنا",
-                food: "الطعام",
-                header_paragraph: "أسوان مزيج فريد من التاريخ والثقافة والجمال الطبيعي. إذا رغبت في زيارة أسوان، ستجد العديد من المعالم القديمة والقرى النوبية التقليدية. الهدوء والسكينة التي توفرها أسوان تجعله وجهة مثالية.",
-                read_more: "اقرأ المزيد",
-                tourist_sites: "المواقع السياحية والأثرية",
-                welcome_paragraph: "تعتبر أسوان واحدة من أبرز المدن السياحية في مصر، وتُعد من أقدم وأجمل المدن. تتميز بتاريخها العريق ومناظرها الطبيعية الخلابة، وتقع على ضفاف نهر النيل، مما يجعلها وجهة مثالية للسياحة والاستجمام.",
-                geo_location_title: "الموقع الجغرافي الفريد، المعالم الفرعونية، والمناظر الطبيعية",
-                geo_location_desc: "تقع محافظة أسوان في أقصى جنوب مصر، وهي صحراء ومحافظة تعتمد على نهر النيل. نهر النيل هو العنصر المحدد للحياة هناك، حيث يتدفق عبر المحافظة من الشمال إلى الجنوب.",
-                cities_title: "مدن الهند الكبرى",
-                delhi_desc: "عاصمة الهند",
-                mumbai_desc: "العاصمة المالية للهند",
-                banglore_desc: "وادي السيليكون في الهند",
-                food_title: "الطعام",
-                blog_author1: "CulturalIndia.net",
-                blog_link1: "طعام الهند التقليدي",
-                blog_text1: "لقد حظي الطعام التقليدي في الهند بتقدير واسع لاستخدامه المذهل للأعشاب والتوابل. تشتهر المأكولات الهندية بتشكيلتها الواسعة من الأطباق.",
-                blog_author2: "مدونة سووميك",
-                blog_link2: "وحدة الهند في التنوع: الأديان",
-                blog_text2: "التنوع يميز الهند. الشخصيات المتنوعة للهند موحدة بشكل قوي ومتجانسة تمامًا لتظهر كدولة واحدة.",
-                blog_author3: "translatemedia",
-                blog_link3: "نظرة على التنوع اللغوي المذهل في الهند",
-                blog_text3: "الهند بلد كبير ويحتوي على مجموعة مذهلة من اللغات. من غير المحتمل أن يطابق أي بلد آخر في العالم الهند من حيث التنوع اللغوي.",
-                blog_author4: "تريبو",
-                blog_link4: "تشكيلة المهرجانات الوطنية في الهند",
-                blog_text4: "ثقافات متنوعة، مهرجانات متنوعة، وكل ذلك تحت اسم بلد واحد؛ هذه هي عظمة الثقافة الهندية.",
-                footer_heading: "سافر معنا",
-                footer_subheading: "دیکھو اپنا देश!",
-                footer_link1: "الثقافة الهندية",
-                footer_link2: "الهند المدهشة",
-                footer_link3: "وزارة الثقافة",
-                footer_link4: "حملة نظافة الهند",
-                footer_visit: "زورنا للمزيد",
-                footer_link5: "حكومتي",
-                footer_link6: "الهند الرقمية",
-                footer_link7: "وزارة السياحة",
-                footer_contact: "اتصل بنا",
-                footer_contact1: " عبد الوهاب عادل",
-                footer_contact2: "روناك غوبتا",
-                footer_contact3: "تاليش شيخ",
-                copyright: "تم التطوير بواسطة ،عبد الوهاب عادل",
-                philae_temple: "معبد فيلة",
-                aswan_museum: "متحف أسوان (متحف جزيرة إلفنتين) ",
-                west_suhail_village: "قرية غرب سهيل",
-                abu_alhawa_dome: "قبة أبو الهوا",
-                unfinished_obelisk: "المسلة الناقصة ",
-                fatimid_cemetery: "مقبرة الفاطميين في أسوان",
-                nubia_museum: "متحف النوبة",
-                abu_simbel: "معبد ابوسمبل",
-                edfu_temple: "معبد إدفو",
-                kitchener_island: "جزيرة النباتات",
-                nile_museum: "متحف النيل",
-                high_dam: "السد العالي", 
-                header_typewrite: [
-                    "الطبيعة، المناخ والحرف اليدوية",
-                    "الثقافة النوبية!",
-                    "الموقع الجغرافي والمعالم السياحية."
-                ],
-                  footer_title: "سافر معنا",
-    footer_paragraph: "شكرًا لزيارة موقعي الشخصي. تواصل معي عبر وسائل التواصل الاجتماعي. استمر في الصعود 🚀. تواصل معي عبر الدردشة الحية!",
-    quick_links: "روابط سريعة",
-     link_home: '<i class="fas fa-chevron-circle-right"></i> الصفحة الرئيسية',
-    link_aswan: '<i class="fas fa-chevron-circle-right"></i> البوابة الإلكترونية لمركز أسوان',
-    link_tourism: '<i class="fas fa-chevron-circle-right"></i> وزارة السياحة والآثار',
-    link_education: '<i class="fas fa-chevron-circle-right"></i> التعليم',
-    link_work: '<i class="fas fa-chevron-circle-right"></i> العمل',
-    link_experience: '<i class="fas fa-chevron-circle-right"></i> الخبرة',
-    link_course: '<i class="fas fa-chevron-circle-right"></i> الدورة',
-    contact_info: '<i class="fas fa-chevron-circle-right"></i> معلومات الاتصال',
-    phone: '<i class="fas fa-phone"></i> الهاتف 01100340198',
-    email: '<i class="fas fa-envelope"></i> abdelwahabadel777@gmail.com',
-    location: '<i class="fas fa-map-marker-alt"></i> الموقع: أسوان، مصر'
-            }
-        };
-
-        let currentLanguage = 'ar'; // أو 'en' حسب الافتراض
-
-        // وظيفة لتبديل اللغة
-        function toggleLanguage() {
-            if (currentLanguage === 'ar') {
-                currentLanguage = 'en';
-                 document.getElementById('flagImage').src = 'ar.jpg'; // صورة علم العربية
-                document.getElementById('flagImage').alt = 'العربية';
-                document.getElementById('langText').innerText = 'عربي';
-            } else {
-                currentLanguage = 'ar';
-               document.getElementById('flagImage').src = 'en.png'; // صورة علم الإنجليزية
-                document.getElementById('flagImage').alt = 'English';
-                document.getElementById('langText').innerText = 'English';
-            }
-            updateTexts(); // تحديث النصوص بناءً على اللغة الجديدة
-        }
-
-        // وظيفة لتحديث النصوص المترجمة
-        function updateTexts() {
-            document.querySelectorAll('[data-translate]').forEach(function(element) {
-                const key = element.getAttribute('data-translate');
-                if (translations[currentLanguage] && translations[currentLanguage][key]) {
-            element.innerHTML = translations[currentLanguage][key];
-                }
-            });
-        }
-
-        // عند تحميل الصفحة، نحدث النصوص
-        document.addEventListener('DOMContentLoaded', () => {
-            updateTexts();
-        });
-
-    </script>
-
-
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/extrenaljq.js"></script>
 
+     <script type="text/javascript" src="js/script.js"></script>
+
+ 
+  
 </body>
 
 </html>

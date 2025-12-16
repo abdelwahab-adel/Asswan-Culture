@@ -15,6 +15,9 @@
    <link rel="icon" type="image/png" href="images/icon.png" />
    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,600i,700" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
  <style>
 header {
     
@@ -142,30 +145,35 @@ header {
     <div id="arrow">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </div>
-
     <nav>
         <div class="container">
             <div class="menu-par">
                 <div class="logo-par">
                     <a href="index.html">
-                        <h2>!Ambesa</h2>
+                        <h2 data-translate="logo">!Ambesa</h2>
                     </a>
                 </div>
                 <div class="nav">
                     <ul>
-                        <li><a class="menu_hover" href="index.html">Home</a></li>
-                        <li><a class="menu_hover" href="#welcome_Sec">The article</a></li>
-                        <li><a class="menu_hover" href="#gallery">picture </a></li>
-                        <li><a class="menu_hover" href="#explore-fiji">Travel With us</a></li>
-                        <li><a class="menu_hover" href="#fiji-holyday">Our Pride</a></li>
-                        <li><a class="menu_hover" href="#blog">food</a></li>
+                        <li><a class="menu_hover" href="index.html" data-translate="home">Home</a></li>
+                        <li><a class="menu_hover" href="index.html#slides_parent" data-translate="heritage_sites">Heritage Sites</a></li>
+                        <li><a class="menu_hover" href="#explore-fiji" data-translate="travel_with_us">Travel With us</a></li>
+                        <li><a class="menu_hover" href="#gallery" data-translate="gallery">Gallery</a></li>
+                        <li><a class="menu_hover" href="noba.html" data-translate="our_pride">Nubian </a></li>
+                        <li><a class="menu_hover"  href="food.html" data-translate="food">food</a></li>
                     </ul>
                 </div>
                 <div class="toggle-btn">
                     <i class="fa fa-bars"></i>
-                </div>
+                </div> 
             </div>
-        </div>
+        </div>   
+<div style="margin: 20px; text-align: center; display:block; position: fixed; top: 10px; right: 10px; z-index: 999;">
+    <button id="langFlag" style="border:none; background:none; cursor:pointer; display: flex; align-items: center; justify-content: center; "onclick=toggleLanguage()>
+        <img id="flagImage" src="en.png" alt="English" style="width:24px; height:24px;">
+        <span id="langText" style="margin-left: 8px;">English</span>
+    </button>
+</div>
     </nav>
 
     <header>
@@ -291,68 +299,55 @@ It is located in the far south of Egypt on the western bank of Lake Nasser.
     </iframe></center>
     </section>
 
-    <!-- <footer>
-        <div class="container">
-            <div class="footer-par">
-                <div class="footer-1">
-                    <h2>Travel with us</h2>
-                </div>
-                <div class="footer-2 fot-info">
-                    <h3>Dekho Apna Desh!</h3>
-                    <ul>
-                        <li><a href="https://indianculture.gov.in/">Indian Culture</a></li>
-                        <li><a href="https://www.incredibleindia.org/content/incredible-india-v2/en.html">Incredible!ndia</a></li>
-                        <li><a href="http://www.indiaculture.nic.in/hi">Ministry of Culture</a></li>
-                        <li><a href="https://swachhbharatmission.gov.in/SBMCMS/index.htm">Swachh Bharat</a></li>
-                    </ul>
-                </div>
-                <div class="footer-3 fot-info">
-                    <h3>Visit For More</h3>
-                    <ul>
-                        <li><a href="https://www.mygov.in/">My Goverment</a></li>
-                        <li><a href="https://www.digitalindia.gov.in/">Digital India</a></li>
-                        <li><a href="https://tourism.gov.in/">Ministry of Tourism</a></li>
-                    </ul>
-                </div>
-                <div class="footer-4 fot-info">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li><a href="https://github.com/">VAIBHAV MEWARA</a></li>
-                        <li><a href="https://github.com/">RONAK GUPTA</a></li>
-                        <li><a href="https://github.com/">TALISH SHIEKH</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <p class="copyright">Developed by Vaibhav, Ronak, Talish</p>
-    </footer> -->
+    <section class="footer" style="text-align: left;">
 
+  <div class="box-container">
+
+      <div class="box">
+          <h3 data-translate="footer_title" style="font-size: 190%;" >Travel with us</h3>
+          <p  data-translate="welcome_paragraph">Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3 data-translate="quick_links">quick links</h3>
+          <a href="index.html" data-translate="link_home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="https://aswan.gov.eg/" data-translate="link_aswan"><i class="fas fa-chevron-circle-right"></i> Electronic Portal Aswan Governorate</a>
+          <a href="https://mota.gov.eg/ar" data-translate="link_tourism"><i class="fas fa-chevron-circle-right"></i> Ministry of Tourism and Antiquities</a>
+          <a href="#education" data-translate="link_education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work" data-translate="link_work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience" data-translate="link_experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="#course" data-translate="link_course"><i class="fas fa-chevron-circle-right"></i> course</a>
+      </div>
+
+
+      <div class="box">
+          <h3 data-translate="contact_info">contact info</h3>
+          <p data-translate="phone"> <i class="fas fa-phone"></i>01100340198</p>
+          <p data-translate="email"> <i class="fas fa-envelope"></i>abdelwahabadel777@gmail.com</p>
+          <p data-translate="location"> <i class="fas fa-map-marked-alt"></i> Aswan, Egypt</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/abdelwahab-adel-57265926b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bp0FJitl2Sk2cG12k2iX76g%3D%3D" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="#" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:abdelwahabadel777@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://www.facebook.com/profile.php?id=100008450681129&mibextid=ZbWKwL" class="fab fa-facebook" aria-label="FaceBook" target="_blank"></a>
+              <a href="http://t.me/Abdelwahab77" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+              <a href="https://wa.me/+0201100340198" class="fab fa-whatsapp" aria-label="Whatsapp" target="_blank"></a>
+          </div>
+      </div>
+  </div>
+
+ 
+</section>
+
+ 
+ 
 
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/extrenaljq.js"></script>
-    <script>
-        
-/*scroll to top*/
-$(document).ready(function(){
-$(window).scroll(function(){
-    if($(this).scrollTop() > 100) {
-        $("#arrow i").fadeIn();
-}
-    else {
-        $("#arrow i").fadeOut();
-}
-
-});
-$("#arrow i").on('click',function(){
-$("html,body").animate({
-    scrollTop: 0
-}, 600);
-    return false;
-});
-
-});
-    </script>
+  
+    <script src="js/script.js"></script>
 </body>
 
 </html>
