@@ -34,7 +34,7 @@
                 nile_museum: "Nile Museum",
                 high_dam: "High Dam",
 
-    alsalat_title: "alsalat_title",
+    alsalat_title: "alsalat",
     alsalat_desc: "One of the most famous Nubian dishes is to put the meat in a pot on the fire with pepper and onion and stir until it softens, then add ghee and stir until it browns, then add water and leave it on the fire until it is cooked.",
     jakoud_title: "Jakoud",
     jakoud_desc: "The dish known as 'Jakoud' is an integral part of Nubian heritage, served at celebrations, weddings, and during Ramadan. Also known as 'Itr,' it's a popular traditional Nubian dish similar to molokhia, but prepared in a unique way that differs from the usual method, giving it a distinctive taste and authentic, heritage-inspired flavor that reflects Nubian cuisine.",
